@@ -55,10 +55,10 @@ for i in range(messages, messages-N, -1):
             subjectis = "le sujet est "
             destinataireis = " et Il provient du destinataire "
             
-            # Envoie des textes en variable
+            # Envoie des textes en variable + Nettoyage du message
             subjectisisclean = subject.translate({ord(i): None for i in '-'})
 
-            # Nettoyage du message
+            # Envoie des textes en variable + Nettoyage du message
             destinataireisclean = f.translate({ord(i): None for i in '<>'})
 
             # Concaténation des variables du dessus
